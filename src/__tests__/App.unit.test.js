@@ -1,11 +1,11 @@
 import React from 'react';
+import App from '../App';
 import {shallow} from 'enzyme';
-import HeaderNav from '../HeaderNav';
 
-describe('HeaderNav', () => {
-  test('renders HeaderNav', () => {
+describe('App', () => {
+  test('renders App', () => {
     const wrapper = shallow(
-      <HeaderNav />
+      <App />
     );
     expect(wrapper).toMatchSnapshot();
   });
