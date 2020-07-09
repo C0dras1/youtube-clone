@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {AppLayout} from './components/AppLayout/AppLayout';
-import {Home} from './containers/Home/Home';
+import Home from './containers/Home/Home';
 import {Route, Switch} from 'react-router-dom';
 import { Watch } from './containers/Watch/Watch';
 import {bindActionCreators} from 'redux';
@@ -30,7 +30,7 @@ class App extends Component {
     script.onload = () => {
       window.gapi.load('client', () => {
         window.gapi.client.setApiKey(API_KEY);
-        window.gapi.clinet.load('youtube', 'v3', () => {
+        window.gapi.client.load('youtube', 'v3', () => {
           this.props.youtubeLibraryLoaded();
         });
       });
