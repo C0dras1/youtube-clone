@@ -31,7 +31,7 @@ export class VideoInfoBox extends React.Component {
             <div className='channel-name'>Channel Name</div>
             <div className='video-publication-date'>Thu 24, 2017</div>
           </div>
-          <Button color='youtube'>91.5K Subscribe</Button>
+          <Button color='youtube'>91.5K Subscribers</Button>
           <div className='video-description'>
             <div className={descriptionTextClass}>
               {descriptionParagraphs}
